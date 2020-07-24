@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="todoapp.css" rel="stylesheet">
+    <title>TO DO APP</title>
+</head>
+<body>
+
+    <div id = "container">
+
+        <h1> 
+            <span class="name">T</span>
+            <span class="name">o</span>
+            <span class="name">-</span>
+            <span class="name">D</span>
+            <span class="name">o</span>            
+            <span class="name">L</span>
+            <span class="name">i</span>
+            <span class="name">s</span>
+            <span class="name">t</span> 
+        </h1>
+
+        <form id = "form">            
+                <lable id="label" for="task"> Activity: </lable> 
+                <input id="input" type="text" placeholder="Enter your task" autocomplete="off" name = "task">
+                <button id="subBtn" type="submit">&plus;</button>            
+        </form>
+
+        <ul id = "toDoList"></ul>
+
+    </div>
+
+    <footer>
+        <div id="copy">
+            <p>&COPY; Created by Lam Banh Beo</p>
+        </div>
+    </footer>
+
+    <script src="todoapp.js"></script>
+    
+</body>
+</html>

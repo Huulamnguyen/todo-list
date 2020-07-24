@@ -1,0 +1,131 @@
+/* Import font rubik from google font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: url("undraw_to_do_xvvc.png") no-repeat fixed bottom;
+    background-size: 75%;    
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 15px;
+    transition: color 1000ms;
+    text-transform: uppercase;
+}
+
+#container {
+    max-width: 450px;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.25);
+    margin: 50px auto 0;
+    padding: 15px;    
+}
+
+/* Start form  */
+#form {
+    display: flex;
+}
+
+#label{
+    display: none;
+}
+
+#input {
+    border: 2px solid lightcoral;
+    border-radius: 3px;
+    flex-grow: 1;
+    font-size: 1rem;
+    margin-right: 10px;    
+    padding: 10px 8px;
+    cursor: context-menu;
+}
+
+#subBtn {
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+    background-color: lightseagreen;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+#subBtn:hover{
+    opacity: 0.8;
+};
+/* end form form  */
+
+#toDoList {
+    margin: 20px;
+    padding: 0;          
+}
+
+
+
+/* Class when hit tagName LI */
+.complete {
+    text-decoration: line-through;    
+    color: grey;
+}
+/* class todo */
+.todo {        
+    background-color: white;
+    text-transform: capitalize;
+    list-style: none;
+    margin-bottom: -1px;    
+    border: 2px solid lightpink;    
+    padding: 8px 10px;   
+    position: relative;
+    right: 5%;
+                    
+}
+
+.todo:hover {
+    background-color: rgba(0, 255, 0, .1);
+}
+
+#todoList > .todo:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.todo:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.todo button {
+    background-color: coral;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    position: absolute;
+    right: 6px;
+    top: 6px;    
+}
+
+.todo button:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer{
+    display: flex;    
+}
+
+#copy {
+    color: lightseagreen;
+    position: fixed;
+    bottom: 0;   
+    width: 100%;
+    text-align: center;
+}
